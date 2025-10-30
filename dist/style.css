@@ -26,16 +26,16 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: normal;
+  line-height: 1;
 }
 
 a {
   text-decoration: none;
-  line-height: normal;
+  line-height: 1;
   cursor: pointer;
 }
 
-img, svg {
+img, svg, video {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -58,6 +58,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family);
   position: relative;
+  line-height: 1;
 }
 
 .container {
@@ -71,7 +72,6 @@ body {
 .title {
   font-weight: 700;
   font-size: 40px;
-  line-height: 137%;
   font-variant: small-caps;
   color: #3b4d69;
 }
@@ -79,7 +79,6 @@ body {
 .text {
   font-weight: 400;
   font-size: 24px;
-  line-height: 112%;
   font-variant: small-caps;
   color: #3b4d69;
 }
@@ -124,7 +123,6 @@ body {
 .header__logo {
   font-weight: 700;
   font-size: 24px;
-  line-height: 292%;
   text-transform: uppercase;
   color: #3b4d69;
   max-height: max-content;
@@ -143,7 +141,6 @@ body {
 .header__contact-item span {
   font-weight: 600;
   font-size: 18px;
-  line-height: 167%;
   text-transform: uppercase;
   text-align: center;
   color: #3b4d69;
@@ -154,7 +151,6 @@ body {
 .header__popup {
   font-weight: 600;
   font-size: 20px;
-  line-height: 95%;
   font-variant: small-caps;
   text-align: center;
   color: #3b4d69;
@@ -179,7 +175,6 @@ body {
 .header__menu-item {
   font-weight: 600;
   font-size: 18px;
-  line-height: 167%;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -274,12 +269,11 @@ body {
   background: rgba(0, 0, 0, 0.9);
 }
 .info__row {
-  padding: 242px 0 236px 0;
+  padding: 242px 0 150px 0;
 }
 .info__title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 92%;
   font-variant: small-caps;
   color: #3b4d69;
 }
@@ -291,7 +285,6 @@ body {
 .info__text {
   font-weight: 500;
   font-size: 22px;
-  line-height: 114%;
   font-variant: small-caps;
   color: #3b4d69;
 }
@@ -308,14 +301,12 @@ body {
 }
 .info__item-text {
   font-weight: 400;
-  line-height: 136%;
 }
 .info__popup {
   background: #fda57d;
   border-radius: 40px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 58px;
   font-variant: small-caps;
   text-align: center;
   color: #3b4d69;
@@ -348,7 +339,6 @@ body {
 .problem__top-item-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 104%;
   font-variant: small-caps;
   color: #fff;
   margin: 28px 0;
@@ -356,7 +346,6 @@ body {
 .problem__top-item-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 139%;
   font-variant: small-caps;
   color: #fff;
   margin-bottom: 0;
@@ -373,7 +362,6 @@ body {
 .problem__bottom-text {
   font-weight: 400;
   font-size: 22px;
-  line-height: 114%;
   letter-spacing: -0.05em;
   font-variant: small-caps;
   color: #646f81;
@@ -381,7 +369,6 @@ body {
 .problem__bottom-popup {
   font-weight: 600;
   font-size: 24px;
-  line-height: 117%;
   font-variant: small-caps;
   text-align: center;
   margin-left: 20px;
@@ -393,6 +380,121 @@ body {
   display: flex;
   height: max-content;
   flex-shrink: 0;
+}
+
+.method {
+  margin-bottom: 100px;
+}
+.method__row {
+  flex-direction: column;
+}
+.method__subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  font-variant: small-caps;
+  color: #3b4d69;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.method__text {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.method__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.method__item {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 70px;
+  background: url("../assets/image/video__button.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.method__item-image {
+  background: #3B4D69;
+  border-radius: 100%;
+  padding: 24px;
+}
+
+.program {
+  margin-bottom: 100px;
+}
+.program__row {
+  flex-direction: column;
+}
+.program__video {
+  width: calc(50% - 12px);
+  margin-top: 0;
+  margin-right: 24px;
+}
+.program__video video {
+  max-width: 100%;
+  height: 100%;
+}
+.program__block {
+  display: flex;
+  margin-top: 80px;
+  border: 2px solid #1e2e47;
+  border-radius: 40px;
+  margin-bottom: 34px;
+}
+.program__block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px 10px 0;
+  width: calc(50% - 12px);
+}
+.program__block-list {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.program__block-list li {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.program__block-text {
+  font-size: 22px;
+  color: #1e2e47;
+}
+.program__button {
+  display: flex;
+  gap: 33px;
+  margin: 24px 0;
+}
+.program__button-tg {
+  background: url("../assets/image/video__button.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  padding: 20px 40px;
+  gap: 17px;
+  border-radius: 40px;
+  width: calc(50% - 17px);
+}
+.program__button-tg span {
+  font-weight: 600;
+  font-size: 24px;
+  font-variant: small-caps;
+  text-align: center;
+  color: #3b4d69;
+}
+.program__button-more {
+  background: #fda57d;
+  width: 100%;
 }
 
 @media (max-width: 1440px) {
@@ -421,6 +523,12 @@ body {
   }
   .info__video video {
     max-width: 400px;
+  }
+  .program__video {
+    margin-top: 0;
+  }
+  .program__video video {
+    max-width: 100%;
   }
   .problem__top-item {
     width: calc(50% - 6px);
@@ -462,6 +570,12 @@ body {
   .info__video video {
     max-width: 100%;
   }
+  .program__video {
+    display: block;
+    max-width: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .info__subtitle {
     margin-bottom: 0;
   }
@@ -478,7 +592,6 @@ body {
   }
   .problem__bottom-text {
     font-size: 14px;
-    line-height: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -507,7 +620,6 @@ body {
   .header__menu-item {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1;
     padding: 6px 7px;
   }
   .header__bottom .container {
@@ -522,7 +634,6 @@ body {
   .header__logo {
     font-weight: 700;
     font-size: 20px;
-    line-height: 15px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -534,11 +645,39 @@ body {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-  .info__popup {
-    line-height: 42px;
+  .title {
+    font-size: 24px;
+    text-align: center;
   }
-  .mobile800 {
-    display: flex;
+  .text {
+    font-size: 14px;
+  }
+  .method {
+    margin-bottom: 50px;
+  }
+  .method__content {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .method__subtitle {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .method__text {
+    margin-bottom: 15px;
+  }
+  .method__item {
+    gap: 8px;
+  }
+  .method__item-image {
+    padding: 17px;
+  }
+  .method__item-image img {
+    max-width: 21px;
+  }
+  .problem {
+    margin-bottom: 50px;
   }
   .problem__top-item-title {
     font-size: 17px;
@@ -546,6 +685,54 @@ body {
   }
   .problem__top-item-text {
     font-size: 14px;
+  }
+  .program {
+    margin-bottom: 50px;
+  }
+  .program__row {
+    align-items: center;
+  }
+  .program__block {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .program__block-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 20px 9px;
+  }
+  .program__text {
+    display: none;
+  }
+  .program__video {
+    width: 100%;
+    margin-right: 0;
+    max-width: max-content;
+  }
+  .program__button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 7px;
+  }
+  .program__button-tg {
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+  }
+  .program__button-tg img {
+    max-width: 10px;
+  }
+  .program__button-tg span {
+    font-size: 17px;
+  }
+  .program__button-more {
+    display: none;
+  }
+  .mobile800 {
+    display: flex;
   }
 }
 @media (max-width: 576px) {
@@ -555,7 +742,6 @@ body {
   }
   .info__text {
     font-size: 14px;
-    line-height: 100%;
     text-align: center;
   }
   .info__popup {
@@ -603,7 +789,6 @@ body {
   .problem__top-title {
     font-weight: 700;
     font-size: 24px;
-    line-height: 83%;
     font-variant: small-caps;
     text-align: center;
     margin-bottom: 7px;
