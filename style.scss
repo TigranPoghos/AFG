@@ -20,6 +20,7 @@ button {
     cursor: pointer;
     background: transparent;
     font-family: var(--font-family);
+    line-height: 1;
 }
 
 ul,li {
@@ -672,6 +673,211 @@ body {
     }
 }
 
+.history {
+    margin-bottom: 100px;
+
+    &__line {
+        height: 1px;
+        width: 100%;
+        margin: 4px 0;
+        background: #3b4d69;
+    }
+
+    &__row {
+        flex-direction: column;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 74px;
+    }
+
+    &__item {
+        width: calc(25% - 56px);
+        gap: 27px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            font-variant: small-caps;
+            color: #3b4d69;
+        }
+    }
+
+    &__video {
+        margin-top: 0;
+
+        & video {
+            max-width: 100%;
+            height: 312px;
+            border: none;
+        }
+
+        & .info__video-button {
+            transform: none;
+            right: 15px;
+            top: 15px;
+            width: 57px;
+            height: 57px;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            left: auto;
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 20px;
+        font-variant: small-caps;
+        color: #3b4d69;
+    }
+}
+
+.need {
+    margin-bottom: 100px;
+
+    &__row {
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    &__left {
+        margin-right: 24px;
+        flex-shrink: 0;
+        display: flex;
+    }
+
+    &__text {
+        letter-spacing: -0.05em;
+        text-align: center;
+        border-radius: 80px;
+        padding: 20px;
+        background: url('../assets/image/video__button.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: -0.05em;
+        font-variant: small-caps;
+        text-align: center;
+        color: #3b4d69;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-middle {
+            margin-right: 24px;
+            margin-left: auto;
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+            max-width: 500px;
+        }
+    }
+}
+
+.rate {
+    margin-bottom: 100px;
+
+    &__row {
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    &__popup {
+        padding: 20px 30px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background: #3b4d69;
+        padding: 40px 28px 40px 28px;
+        gap: 32px;
+        max-width: 415px;
+        border-radius: 40px;
+        max-height: 408px;
+
+        &-good {
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px 22px;
+            border-radius: 40px;
+            background: url('../assets/image/video__button.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: max-content;
+            font-variant: small-caps;
+            text-align: center;
+            color: #1e2e47;
+        }
+
+        &-title {
+            color: #fff;
+            font-weight: 800;
+        }
+
+        &-text {
+            color: #9aa7b4;
+            font-size: 20px;
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+
+        &-subtitle {
+            color: #fff;
+        }
+
+        &-button {
+            padding: 20px 26px;
+            max-width: max-content;
+            border-radius: 40px;
+            background: url('../assets/image/video__button.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            & span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
 .mobile900 {
     display: none;
 }
@@ -722,6 +928,16 @@ body {
 
             & video {
                 max-width: 400px;
+            }
+        }
+    }
+
+    .history {
+        &__video {
+            margin-top: 0;
+
+            & video {
+                max-width: 100%;
             }
         }
     }
@@ -791,6 +1007,22 @@ body {
             font-size: 20px;
         }
     }
+
+    .history {
+        &__block {
+            gap: 30px;
+        }
+
+        &__item {
+            width: calc(25% - 23px);
+        }
+
+        &__video {
+            & video {
+                height: 250px;
+            }
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -802,6 +1034,14 @@ body {
 
         & video {
             max-width: 100%;
+        }
+    }
+
+    .history {
+        &__video {
+            display: block;
+            margin-top: 0;
+            margin-bottom: 0;
         }
     }
 
@@ -918,6 +1158,49 @@ body {
         }
     }
 
+    .need {
+        margin-bottom: 50px;
+
+        &__subtitle {
+            font-size: 17px;
+        }
+
+        &__content {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            padding: 15px;
+            border-radius: 40px;
+            margin-bottom: 30px;
+        }
+
+        &__left {
+            &-svg {
+                display: none;
+            }
+        }
+
+        &__main {
+            flex-direction: column;
+            justify-content: normal;
+
+            &-text {
+                max-width: 225px;
+                gap: 25px;
+
+                &:first-child {
+                    margin-bottom: 25px;
+                }
+            }
+
+            &-middle {
+                display: none;
+            }
+        }
+    }
+
     .container {
         padding: 0 22px;
     }
@@ -929,6 +1212,34 @@ body {
         }
     }
 
+    .history {
+        margin-bottom: 50px;
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__item {
+            gap: 12px;
+            align-items: center;
+            width: 100%;
+
+            &-title {
+                font-size: 16px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__video {
+            & video {
+                height: 188px;
+            }
+        }
+    }
+
     .title {
         font-size: 24px;
         text-align: center;
@@ -936,6 +1247,59 @@ body {
 
     .text {
         font-size: 14px;
+    }
+
+    .rate {
+        margin-bottom: 50px;
+
+        &__wrapper {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__popup {
+            padding: 15px 20px;
+            max-width: 100%;
+            font-size: 20px;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        &__item {
+            align-items: center;
+            gap: 15px;
+            max-height: none;
+            padding: 15px 20px;
+            max-width: 100%;
+            width: 100%;
+        
+            &-good {
+                padding: 7px 13px;
+                font-size: 17px;
+            }
+
+            &-title {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            &-text {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            &-subtitle {
+                text-align: center;
+            }
+
+            &-button {
+                padding: 10px 22px;
+
+                & span {
+                    font-size: 17px;
+                }
+            }
+        }
     }
 
     .method {
@@ -1092,6 +1456,16 @@ body {
             & img {
                 max-width: 17px;
             }
+        }
+    }
+
+    .rate {
+        &__popup {
+            padding: 15px 20px;
+            max-width: 100%;
+            font-size: 20px;
+            justify-content: center;
+            margin: 0;
         }
     }
 
