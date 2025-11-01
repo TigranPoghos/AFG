@@ -977,7 +977,7 @@ body.hidden {
   cursor: pointer;
 }
 .bid__form-item-block::before {
-  content: url("../assets/image/form__arrow.png");
+  content: "";
   width: 16px;
   height: 15px;
   position: absolute;
@@ -985,6 +985,10 @@ body.hidden {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
+  background-image: url("../assets/image/form__arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .bid__form-item:first-child {
   max-width: 335px;
@@ -1042,6 +1046,7 @@ body.hidden {
 .bid__custom-box {
   border-radius: 5px;
   width: 18px;
+  flex-shrink: 0;
   margin-right: 14px;
   height: 18px;
   background: #1e2e47;
@@ -1344,7 +1349,7 @@ body.hidden {
   color: #1e2e47;
 }
 .popup__item .bid__checkbox-text a {
-  color: #010407;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
 }
@@ -1361,8 +1366,10 @@ body.hidden {
 }
 .popup__close {
   position: absolute;
-  right: 30px;
+  right: 50px;
   top: 30px;
+  position: fixed;
+  z-index: 10000;
 }
 .popup__bid {
   background: #3b4d69;
@@ -1551,6 +1558,10 @@ body.hidden {
   }
   .header__menu {
     flex-wrap: wrap;
+  }
+  .header__menu li {
+    flex: 0 0 calc(33.333% - 18px);
+    text-align: center;
   }
   .header__menu-line {
     margin: 0 auto;
@@ -1868,6 +1879,10 @@ body.hidden {
   .bid__form-item input {
     padding: 10px 15px;
   }
+  .bid__form-item-block::before {
+    width: 10px;
+    height: 10px;
+  }
   .bid__form-button {
     font-size: 14px;
     max-width: 100%;
@@ -1921,12 +1936,30 @@ body.hidden {
   }
   .popup__wrapper {
     border-radius: 20px;
+    padding: 10px;
+  }
+  .popup__wrapper .bid__form-item {
+    flex-direction: column;
+  }
+  .popup__item-row .bid__form-item {
+    flex-direction: column;
   }
   .popup input:focus, .popup textarea:focus {
     font-size: 14px;
   }
   .popup input, .popup textarea {
     font-size: 14px;
+  }
+  .popup__program {
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+  .popup__bid {
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+  .popup__title {
+    text-align: center;
   }
   .popup__text {
     font-size: 14px;

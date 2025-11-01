@@ -1126,7 +1126,7 @@ body {
                 }
 
                 &::before {
-                    content: url("../assets/image/form__arrow.png");
+                    content: '';
                     width: 16px;
                     height: 15px;
                     position: absolute;
@@ -1134,6 +1134,10 @@ body {
                     z-index: 1;
                     top: 50%;
                     transform: translateY(-50%);
+                    background-image: url("../assets/image/form__arrow.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
             }
 
@@ -1207,6 +1211,7 @@ body {
     &__custom-box {
         border-radius: 5px;
         width: 18px;
+        flex-shrink: 0;
         margin-right: 14px;
         height: 18px;
         background: #1e2e47;
@@ -1581,7 +1586,7 @@ body {
             &__checkbox {
                 &-text {
                     & a {
-                        color: #010407;
+                        color: #fff;
                         font-weight: 400;
                         font-size: 20px;
                     }
@@ -1605,8 +1610,10 @@ body {
 
     &__close {
         position: absolute;
-        right: 30px;
+        right: 50px;
         top: 30px;
+        position: fixed;
+        z-index: 10000;
     }
 
     &__bid {
@@ -1887,6 +1894,11 @@ body {
         &__menu {
             flex-wrap: wrap;
 
+            & li {
+                flex: 0 0 calc(33.333% - 18px);
+                text-align: center;
+            }
+
             &-line {
                 margin: 0 auto;
             }
@@ -2130,7 +2142,7 @@ body {
 
         &__top {
             margin-top: 20px;
-            
+
             &-item {
                 &-title {
                     font-size: 17px;
@@ -2315,6 +2327,13 @@ body {
                 & input {
                     padding: 10px 15px;
                 }
+
+                &-block {
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
             }
 
             &-button {
@@ -2400,6 +2419,27 @@ body {
 
         &__wrapper {
             border-radius: 20px;
+            padding: 10px;
+
+            & .bid {
+                &__form {
+                    &-item {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        &__item {
+            &-row {
+                & .bid {
+                    &__form {
+                        &-item {
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
         }
 
         & input:focus, textarea:focus {
@@ -2408,6 +2448,20 @@ body {
 
         & input, textarea {
             font-size: 14px;
+        }
+        
+        &__program {
+            padding: 20px 10px;
+            border-radius: 20px;
+        }
+
+        &__bid {
+            padding: 20px 10px;
+            border-radius: 20px;
+        }
+
+        &__title {
+            text-align: center;
         }
 
         &__text {
