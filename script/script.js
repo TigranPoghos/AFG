@@ -150,7 +150,7 @@ allVideoContainers.forEach(function(videoContainer) {
 
         if (clean.length <= 3) {
         e.preventDefault();
-        $(this).setCursorPosition(6);
+        $(this).setCursorPosition(4);
         }
     });
 
@@ -416,6 +416,58 @@ allVideoContainers.forEach(function(videoContainer) {
             header.style.transition = 'transform 0.3s ease';
         }
     });
+
+
+
+
+
+
+
+    const popupReady = document.querySelector('.popup__readyJS');
+    const allForms = document.querySelectorAll('form');
+
+    allForms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log('AFG: форма отправлена (локально)');
+
+            popupBid?.classList.remove('active');
+            popupProgram?.classList?.remove('active');
+            opacite?.classList?.add('active');
+            body?.classList?.add('hidden');
+
+            popupReady.classList.add('visible');
+
+            form.reset();
+
+            const closeOnOutsideClick = (event) => {
+                if (!popupReady.contains(event.target)) {
+                    popupReady.classList.remove('visible');
+                    opacite?.classList.remove('active');
+                    body?.classList.remove('hidden');
+                    document.removeEventListener('click', closeOnOutsideClick);
+                }
+            };
+
+            setTimeout(() => {
+                document.addEventListener('click', closeOnOutsideClick);
+            }, 50);
+
+            const closeButton = popupReady.querySelector('.popup__close');
+            if (closeButton) {
+                const closeHandler = () => {
+                    popupReady.classList.remove('visible');
+                    opacite?.classList.remove('active');
+                    body?.classList.remove('hidden');
+                    closeButton.removeEventListener('click', closeHandler);
+                    document.removeEventListener('click', closeOnOutsideClick);
+                };
+                closeButton.addEventListener('click', closeHandler);
+            }
+        });
+    });
+
+
 
 
 

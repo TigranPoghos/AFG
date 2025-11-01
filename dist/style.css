@@ -1404,6 +1404,10 @@ body.hidden {
 }
 .popup__readyJS {
   max-width: 627px;
+  display: none;
+}
+.popup__readyJS.visible {
+  display: flex;
 }
 .popup__readyJS .popup__close {
   right: 55px;

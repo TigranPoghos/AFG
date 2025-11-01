@@ -1657,6 +1657,11 @@ body {
     
     &__readyJS {
         max-width: 627px;
+        display: none;
+
+        &.visible {
+            display: flex;
+        }
 
         & .popup__close {
             right: 55px;
