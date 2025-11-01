@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="header">
+    <header class="header anim">
         <div class="header__row row">
             <div class="header__top">
                 <div class="container">
@@ -33,53 +33,54 @@
                             <img src="assets/image/tg.png" alt="">
                         </a>
                     </div>
-                    <button class="header__popup">Записаться на пробное занятие </button>
+                    <button data-popup="bid" class="header__popup">Записаться на пробное занятие </button>
                 </div>
             </div>
             <nav class="header__bottom">
                 <div class="container">
                     <ul class="header__menu">
-                        <li><button class="header__menu-item">о МЕТОДе</button></li>
+                        <li><button class="header__menu-item btn-method">о МЕТОДе</button></li>
                         <svg class="mobile800 header__menu-line" width="1" height="11" viewBox="0 0 1 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 0V11" stroke="white" />
                         </svg>
-                        <li><button class="header__menu-item">ОТЗЫВЫ</button></li>
+                        <li><button class="header__menu-item btn-history">ОТЗЫВЫ</button></li>
                         <svg class="mobile800 header__menu-line" width="1" height="11" viewBox="0 0 1 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 0V11" stroke="white" />
                         </svg>
-                        <li><button class="header__menu-item">ВОПРОСЫ</button></li>
+                        <li><button class="header__menu-item btn-faq">ВОПРОСЫ</button></li>
                         <svg class="mobile800 header__menu-line header__menu-line-3" width="1" height="11" viewBox="0 0 1 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 0V11" stroke="white" />
                         </svg>
-                        <li><button class="header__menu-item">стоимость</button></li>
+                        <li><button class="header__menu-item btn-bid">стоимость</button></li>
                         <svg class="mobile800 header__menu-line header__menu-line-4" width="1" height="11" viewBox="0 0 1 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 0V11" stroke="white" />
                         </svg>
-                        <li><button class="header__menu-item">КОНТАКТЫ</button></li>
+                        <li><button class="header__menu-item btn-map">КОНТАКТЫ</button></li>
                         <svg class="mobile800 header__menu-line header__menu-line-5" width="1" height="11" viewBox="0 0 1 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 0V11" stroke="white" />
                         </svg>
-                        <li><button class="header__menu-item">программы</button></li>
+                        <li><button class="header__menu-item btn-rate">программы</button></li>
                     </ul>
                 </div>
             </nav>
             <div class="header__new mobile800">
-                <button class="header__popup">Записаться на пробное занятие </button>
+                <button data-popup="bid" class="header__popup">Записаться на пробное занятие </button>
             </div>
         </div>
     </header>
     <main class="main">
+        <div class="opacite"></div>
         <section class="info">
             <div class="container">
                 <div class="info__row row">
                     <div class="info__content">
-                        <h1 class="info__title">Поможем справиться с&nbsp;болью в спине и суставах</h1>
-                        <p class="info__text info__subtitle">
+                        <h1 class="info__title anim">Поможем справиться с&nbsp;болью в спине и суставах</h1>
+                        <p class="info__text info__subtitle anim">
                             Эффективный и безопасный метод естественного укрепления суставов и повышения минеральной плотности костей.
                             <br> Надежная профилактика остеопороза.
                             <br> Ощутимый результат уже с первого занятия.
                         </p>
-                        <div class="info__video videoJS mobile900">
+                        <div class="info__video anim videoJS mobile900">
                             <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                             <button class="info__video-button videoButtonJS">
                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +88,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <ul class="info__item">
+                        <ul class="info__item anim">
                             <li>
                                 <img src="assets/image/ul-icon.png" alt="">
                                 <span class="info__item-text info__text">Всего 2 часа в месяц Вашего времени</span>
@@ -109,10 +110,10 @@
                                 <span class="info__item-text info__text">Индивидуальные занятия с инструктором</span>
                             </li>
                         </ul>
-                        <p class="info__text">Начните путь к жизни без боли уже сегодня</p>
-                        <button class="info__popup">Получить консультацию и начать</button>
+                        <p class="info__text anim">Начните путь к жизни без боли уже сегодня</p>
+                        <button data-popup="program" class="info__popup">Получить консультацию и начать</button>
                     </div>
-                    <div class="info__video videoJS">
+                    <div class="info__video anim videoJS">
                         <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                         <button class="info__video-button videoButtonJS">
                             <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,8 +128,8 @@
             <div class="container">
                 <div class="problem__row row">
                     <div class="problem__top">
-                        <h3 class="problem__top-title mobile576">Если боль не отступает и мешает жить</h3>
-                        <div class="problem__top-item">
+                        <h3 class="problem__top-title anim mobile576">Если боль не отступает и мешает жить</h3>
+                        <div class="problem__top-item anim">
                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.25" y="0.25" width="52.5" height="52.5" rx="14.75" fill="url(#paint0_radial_1_120)" fill-opacity="0.8" stroke="white" stroke-width="0.5" />
                                 <defs>
@@ -141,7 +142,7 @@
                             <p class="problem__top-item-title">Боль и напряжение</p>
                             <p class="problem__top-item-text">Шея немеет, голова тяжёлая, ноет поясница, все тело как деревянное</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="52.75" y="52.75" width="52.5" height="52.5" rx="14.75" transform="rotate(-180 52.75 52.75)" fill="url(#paint0_radial_1_122)" fill-opacity="0.8" stroke="white" stroke-width="0.5" />
                                 <defs>
@@ -154,7 +155,7 @@
                             <p class="problem__top-item-title">Постоянно на таблетках и уколах</p>
                             <p class="problem__top-item-text">Болеутоляющие помогают все хуже. От побочных эффектов страдают желудок, печень, почки</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.25" y="0.25" width="52.5" height="52.5" rx="14.75" fill="url(#paint0_radial_1_124)" stroke="white" stroke-width="0.5" />
                                 <defs>
@@ -167,7 +168,7 @@
                             <p class="problem__top-item-title">Бессонница, упадок сил</p>
                             <p class="problem__top-item-text">Плохой сон не даёт восстановиться, нет сил на работу и домашние дела</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.250002" y="52.75" width="52.5" height="52.5" rx="14.75" transform="rotate(-90 0.250002 52.75)" fill="url(#paint0_radial_1_127)" fill-opacity="0.8" stroke="white" stroke-width="0.5" />
                                 <defs>
@@ -182,12 +183,12 @@
                         </div>
                     </div>
                     <div class="problem__bottom">
-                        <p class="problem__bottom-text">
+                        <p class="problem__bottom-text anim">
                             Не видите выхода? Вас убеждают, что это все - "возрастное" и "необратимое"?
                             <br> Вы не одни. Тысячи людей сталкиваются с этим каждый день.
                             <br> Но есть способ не просто заглушить симптомы, а устранить их причину.
                         </p>
-                        <button class="problem__bottom-popup">Узнать, подходит ли это Вам</button>
+                        <button data-popup="program" class="anim problem__bottom-popup">Узнать, подходит ли это Вам</button>
                     </div>
                 </div>
             </div>
@@ -195,45 +196,45 @@
         <section class="method">
             <div class="container">
                 <div class="method__row row">
-                    <h1 class="title">Если лечение даёт только временный эффект</h1>
-                    <h3 class="method__subtitle">Почему обычное лечение помогает ненадолго?</h3>
-                    <p class="text method__text">Стандартные методы направлены, как правило, на снятие симптомов:</p>
+                    <h1 class="title anim">Если лечение даёт только временный эффект</h1>
+                    <h3 class="method__subtitle anim">Почему обычное лечение помогает ненадолго?</h3>
+                    <p class="text method__text anim">Стандартные методы направлены, как правило, на снятие симптомов:</p>
                     <div class="method__content">
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Обезболивающие просто блокируют боль, не устраняют причину, имеют побочные эффекты, требуют постоянного приёма</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Массаж расслабляет только поверхностные мышцы, даёт кратковременное облегчение, требует регулярного повторения</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Физиотерапия только временно улучшает кровоток и снимает болевой синдром</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Мануальная терапия насильственно "вправляет" позвонки, не устраняет причину смещения, может вызывать обострения, эффект быстро проходит</p>
                         </div>
                     </div>
-                    <p class="text method__text">Но причина остаётся, и симптомы возвращаются снова и снова</p>
+                    <p class="text method__text anim">Но причина остаётся, и симптомы возвращаются снова и снова</p>
                 </div>
             </div>
         </section>
         <section class="program">
             <div class="container">
                 <div class="program__row row">
-                    <h1 class="title">Как работает наша программа?</h1>
-                    <div class="program__block">
-                        <div class="info__video program__video videoJS">
+                    <h1 class="title anim">Как работает наша программа?</h1>
+                    <div class="program__block ">
+                        <div class="info__video anim program__video videoJS">
                             <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                             <button class="info__video-button videoButtonJS">
                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,10 +243,10 @@
                             </button>
                         </div>
                         <div class="program__block-content">
-                            <p class="text">
+                            <p class="text anim">
                                 <span style="font-weight: 700;">Адаптивно-функциональная гимнастика</span> (АФГ) – это эффективная, научно обоснованная программа укрепления костно-мышечной системы, известная как остеогенная нагрузка
                             </p>
-                            <ul class="program__block-list">
+                            <ul class="program__block-list anim">
                                 <li>
                                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.15" y="0.15" width="28.7" height="28.7" rx="14.35" fill="url(#paint0_radial_1_354)" stroke="white" stroke-width="0.3" />
@@ -331,7 +332,7 @@
                                     <p class="text program__block-text">Возвращает подвижность</p>
                                 </li>
                             </ul>
-                            <div class="program__button mobile800">
+                            <div class="program__button anim mobile800">
                                 <a href="#" class="program__button-tg">
                                     <span>Наш Телеграм канал</span>
                                     <img src="assets/image/program-arrow.png" alt="">
@@ -347,12 +348,12 @@
                             </a>
                         </div>
                     </div>
-                    <p class="text program__text">
+                    <p class="text program__text anim">
                         Выполнение несложных упражнений на специальном тренажёре занимает от 30 до 45 минут. 
                         <br> Под руководством инструктора пользователи совершают безопасные, контролируемые движения, что приводит к стимуляции центральной нервной системы, запускающей остеогенез (рост новой кости).
                         <br> Кроме того, занятия помогают укрепить мышцы, улучшить координацию, повысить гибкость и адаптировать организм к любым нагрузкам
                     </p>
-                    <div class="program__button">
+                    <div class="program__button anim">
                         <a href="#" class="program__button-tg">
                             <span>Наш Телеграм канал</span>
                             <img src="assets/image/program-arrow.png" alt="">
@@ -372,36 +373,36 @@
         <section class="method method__second">
             <div class="container">
                 <div class="method__row row">
-                    <h1 class="title">Почему метод АФГ эффективно работает?</h1>
+                    <h1 class="title anim">Почему метод АФГ эффективно работает?</h1>
                     <div class="method__content">
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 1
                             </div>
                             <p class="text">Упражнения стимулируют усиленную выработку стволовых клеток, которые запускают механизм регенерации и обновления всех систем организма, в том числе костной и нервно-мышечной</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 2
                             </div>
                             <p class="text">Упражнения подбираются индивидуально с учётом особенностей и возможностей каждого</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 3
                             </div>
                             <p class="text">В основе упражнений - постепенное повышение нагрузки и точная согласованность движений</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 4
                             </div>
                             <p class="text">Методика использует научный подход и основывается на принципах адаптивной физической культуры</p>
                         </div>
                     </div>
-                    <p class="text method__text">Метод АФГ помогает самостоятельно, в короткие сроки, запустить процессы восстановления внутри своего тела.</p>
-                    <h3 class="method__subtitle">Хотите узнать, как победить боль легко, без усилий, без таблеток и уколов? <br> Приглашаем Вас пройти вводное занятие </h3>
-                    <button class="program__button-tg">
+                    <p class="text method__text anim">Метод АФГ помогает самостоятельно, в короткие сроки, запустить процессы восстановления внутри своего тела.</p>
+                    <h3 class="method__subtitle anim">Хотите узнать, как победить боль легко, без усилий, без таблеток и уколов? <br> Приглашаем Вас пройти вводное занятие </h3>
+                    <button data-popup="bid" class="program__button-tg anim">
                         <span>Записаться на вводное занятие</span>
                         <img src="assets/image/program-arrow.png" alt="">
                     </button>
@@ -411,30 +412,30 @@
         <section class="problem problem__second">
             <div class="container">
                 <div class="problem__row row">
-                    <h3 class="title">Что дают занятия АФГ?</h3>
+                    <h1 class="title anim">Что дают занятия АФГ?</h1>
                     <div class="problem__top">
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <div class="problem__top-plus"><span>+</span></div>
                             <p class="problem__top-item-title">Снижение болевых ощущений - свобода движений</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <div class="problem__top-plus"><span>+</span></div>
                             <p class="problem__top-item-title">Укрепление костного аппарата - надёжная профилактика остеопороза</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <div class="problem__top-plus"><span>+</span></div>
                             <p class="problem__top-item-title">Укрепление суставов, связок - снижение риска травм и переломов</p>
                         </div>
-                        <div class="problem__top-item">
+                        <div class="problem__top-item anim">
                             <div class="problem__top-plus"><span>+</span></div>
                             <p class="problem__top-item-title">Укрепление мышечного каркаса - улучшение координации</p>
                         </div>
                     </div>
                     <div class="problem__bottom">
-                        <p class="problem__bottom-text">
+                        <p class="problem__bottom-text anim">
                             Регулярные занятия силовой гимнастикой улучшают адаптацию к нагрузкам, повышают выносливость, помогают укрепить здоровье и вернуть энергию молодости.
                         </p>
-                        <h3 class="problem__bottom-subtitle">АФГ - Ваш ключ к здоровому долголетию!</h3>
+                        <h3 class="problem__bottom-subtitle anim">АФГ - Ваш ключ к здоровому долголетию!</h3>
                     </div>
                 </div>
             </div>
@@ -442,9 +443,9 @@
         <section class="history">
             <div class="container">
                 <div class="history__row row">
-                    <h1 class="title">Реальные истории возвращения к жизни</h1>
+                    <h1 class="title anim">Реальные истории возвращения к жизни</h1>
                     <div class="history__block">
-                        <div class="history__item">
+                        <div class="history__item anim">
                             <div class="info__video history__video videoJS">
                                 <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                                 <button class="info__video-button videoButtonJS">
@@ -458,7 +459,7 @@
                             <p class="history__text"><span style="font-weight: 700;">2 тренировки:</span> боли значительно снизились, после первого занятия появилось состояние полной энергии и прилива сил, пошла регенерация рук и суставов</p>
                         </div>
                         <div class="history__line mobile800"></div>
-                        <div class="history__item">
+                        <div class="history__item anim">
                             <div class="info__video history__video videoJS">
                                 <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                                 <button class="info__video-button videoButtonJS">
@@ -472,7 +473,7 @@
                             <p class="history__text"><span style="font-weight: 700;">1 тренировка:</span> прилив сил, чувство полного проживания жизни, выравнивание эмоционального состояния</p>
                         </div>
                         <div class="history__line mobile800"></div>
-                        <div class="history__item">
+                        <div class="history__item anim">
                             <div class="info__video history__video videoJS">
                                 <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                                 <button class="info__video-button videoButtonJS">
@@ -486,7 +487,7 @@
                             <p class="history__text"><span style="font-weight: 700;">2 тренировки:</span> уверенная ходьба без костылей, убежденность в своих силах</p>
                         </div>
                         <div class="history__line mobile800"></div>
-                        <div class="history__item">
+                        <div class="history__item anim">
                             <div class="info__video history__video videoJS">
                                 <video poster="assets/image/info__prev.jpg" src="assets/video/test.mp4"></video>
                                 <button class="info__video-button videoButtonJS">
@@ -506,33 +507,33 @@
         <section class="method method__third">
             <div class="container">
                 <div class="method__row row">
-                    <h1 class="title">Безопасность</h1>
+                    <h1 class="title anim">Безопасность</h1>
                     <div class="method__content">
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Упражнения адаптированы под индивидуальные возможности человека</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Занятия исключают чрезмерные нагрузки и травмоопасные упражнения</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Опытным спортсменам не грозит переутомление от нагрузок</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
                             <p class="text">Занятия по методу АФГ помогают лучше адаптироваться в повседневной жизни и не имеют никаких возрастных ограничений</p>
                         </div>
-                        <div class="method__item">
+                        <div class="method__item anim">
                             <div class="method__item-image">
                                 <img src="assets/image/method__icon.png" alt="">
                             </div>
@@ -545,9 +546,9 @@
         <section class="need">
             <div class="container">
                 <div class="need__row row">
-                    <div class="title">Кому рекомендован метод</div>
+                    <h1 class="title anim">Кому рекомендован метод</h1>
                     <div class="need__content">
-                        <div class="need__left">
+                        <div class="need__left anim">
                             <svg class="need__left-svg" width="36" height="228" viewBox="0 0 36 228" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 19L18 211" stroke="#3B4D69" />
                                 <circle cx="18.5" cy="18.5" r="8.5" fill="#FDA57D" />
@@ -642,9 +643,9 @@
                         </div>
                         <div class="need__main">
                             <div class="need__main-text">
-                                <p class="text">Жителям мегаполисов, при «сидячем» образе жизни</p>
-                                <p class="text">Спортсменам для быстрого восстановления после травм и растяжений</p>
-                                <p class="text">Старшему поколению для укрепления костей и гибкости суставов</p>
+                                <p class="text anim">Жителям мегаполисов, при «сидячем» образе жизни</p>
+                                <p class="text anim">Спортсменам для быстрого восстановления после травм и растяжений</p>
+                                <p class="text anim">Старшему поколению для укрепления костей и гибкости суставов</p>
                             </div>
                             <div class="need__main-middle">
                                 <svg width="36" height="228" viewBox="0 0 36 228" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -681,54 +682,742 @@
                                 </svg>
                             </div>
                             <div class="need__main-text">
-                                <p class="text">Школьникам и студентам для укрепления мышц и повышения выносливости</p>
-                                <p class="text">Военным для восстановления и реабилитации</p>
-                                <p class="text">Молодым мамам - для послеродового восстановления</p>
+                                <p class="text anim">Школьникам и студентам для укрепления мышц и повышения выносливости</p>
+                                <p class="text anim">Военным для восстановления и реабилитации</p>
+                                <p class="text anim">Молодым мамам - для послеродового восстановления</p>
                             </div>
                         </div>
                     </div>
-                    <p class="need__text text">
+                    <p class="need__text text anim">
                         В методике АФГ нет возрастных ограничений и сложных условий.
                         <br> Упражнения подходят для людей разного уровня физической подготовки, будь то новички, или опытные спортсмены, желающие улучшить свои результаты, программы тренировок легко адаптируются под любые цели, под индивидуальные особенности и возможности каждого человека.
                     </p>
-                    <h3 class="need__subtitle">Мы создаём для Вас возможности быстрого и естественного восстановления сил и укрепления здоровья!</h3>
+                    <h3 class="need__subtitle anim">Мы создаём для Вас возможности быстрого и естественного восстановления сил и укрепления здоровья!</h3>
                 </div>
             </div>
         </section>
         <section class="rate">
             <div class="container">
                 <div class="rate__row row">
-                    <h1 class="title">Программы</h1>
+                    <h1 class="title anim">Программы</h1>
                     <div class="rate__wrapper">
-                        <div class="rate__item">
+                        <div class="rate__item anim">
                             <h3 class="rate__item-title text">Старт</h3>
                             <div class="rate__item-text">1 персональная тренировка + консультация</div>
                             <div class="rate__item-subtitle text">Диагностика и план <br> Знакомство с методом</div>
-                            <button class="rate__item-button"><span class="text">Выбрать</span></button>
+                            <button data-popup="bid" class="rate__item-button"><span class="text">Выбрать</span></button>
                         </div>
-                        <div class="rate__item">
+                        <div class="rate__item anim">
                             <p class="rate__item-good">Выгоднее</p>
                             <h3 class="rate__item-title text">Базовый уровень</h3>
                             <div class="rate__item-text">8 тренировок + сопровождение куратора</div>
                             <div class="rate__item-subtitle text">Адаптивная программа <br> Поддержка между занятиями</div>
-                            <button class="rate__item-button"><span class="text">Выбрать</span></button>
+                            <button data-popup="bid" class="rate__item-button"><span class="text">Выбрать</span></button>
                         </div>
-                        <div class="rate__item">
+                        <div class="rate__item anim">
                             <h3 class="rate__item-title text">Максимальный прогресс</h3>
                             <div class="rate__item-text">12 тренировок + индивидуальная программа + ежедневная поддержка</div>
                             <div class="rate__item-subtitle text">Максимальный прогресс <br> Ежедневная связь</div>
-                            <button class="rate__item-button"><span class="text">Выбрать</span></button>
+                            <button data-popup="bid" class="rate__item-button"><span class="text">Выбрать</span></button>
                         </div>
                     </div>
-                    <button class="info__popup rate__popup">Подобрать программу</button>
+                    <button data-popup="program" class="anim info__popup rate__popup">Подобрать программу</button>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="faq__row row">
+                    <h1 class="title anim">Ответы частые вопросы:</h1>
+                    <div class="faq__wrapper">
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Есть ли противопоказания?</p>
+                            </div>
+                            <p class="faq__answer">
+                                К абсолютным противопоказаниям к применению нашей методики относятся:
+                                <br> - беременность,
+                                <br> - недавно перенесенные операции,
+                                <br> - острое заболевание с повышением температуры
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Можно ли заниматься пожилым людям?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Можно ли заниматься людям без спортивной подготовки или в плохой физической форме?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Можно ли заниматься женщинам?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Можно ли заниматься, если были травмы в прошлом?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Подойдёт ли метод при моём диагнозе (остеохондроз, грыжа, артроз)?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Сколько времени нужно, чтобы увидеть результат?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Как часто нужно заниматься?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Можно ли совмещать занятия со спортом?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Как удаётся добиться таких результатов, как в видео-отзывах?</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                        <div class="faq__item anim">
+                            <div class="faq__question">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8735 5.78163L3.44298 0.739516C2.1107 0.0272 0.499987 0.992499 0.499986 2.50325L0.499986 12.5875C0.499986 14.0982 2.1107 15.0635 3.44298 14.3512L12.8735 9.3091C14.2828 8.55558 14.2828 6.53515 12.8735 5.78163Z" fill="white" stroke="#1E2E47" />
+                                </svg>
+                                <p>Правила и техника безопасности для занимающихся по системе АФГ</p>
+                            </div>
+                            <p class="faq__answer">
+                                ответ
+                            </p>
+                        </div>
+                    </div>
+                    <button data-popup="program" class="anim info__popup rate__popup">Задать свой вопрос</button>
+                </div>
+            </div>
+        </section>
+        <section class="doc">
+            <div class="container">
+                <div class="doc__row row">
+                    <h1 class="title anim">Экспертное мнение</h1>
+                    <p class="text anim doc__text">Вы можете ознакомиться со статьями, где подробнее узнаете о исследованиях</p>
+                    <p class="swiper-slide-text anim doc__subtitle mobile800">Исследования АФГ</p>
+                    <div class="doc__slider anim">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <img src="assets/image/doc.png" alt="">
+                                    <p class="swiper-slide-text">Исследование АФГ</p>
+                                    <p class="swiper-slide-text mobile800">Читать</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="anim swiper__button-prev">
+                            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.55557 15.926L23.3203 27.5857C24.6526 28.2995 26.2647 27.3342 26.2647 25.8227L26.2647 2.50342C26.2647 0.991952 24.6526 0.0267132 23.3203 0.740464L1.55557 12.4001C0.148157 13.1541 0.148157 15.1721 1.55557 15.926Z" fill="#3B4D69" stroke="#3B4D69" />
+                            </svg>
+                        </div>
+                        <div class="anim swiper__button-next">
+                            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.2091 12.4001L3.44444 0.740466C2.11211 0.026717 0.5 0.991954 0.5 2.50343L0.5 25.8227C0.5 27.3342 2.11211 28.2995 3.44444 27.5857L25.2091 15.926C26.6166 15.1721 26.6166 13.1541 25.2091 12.4001Z" fill="#3B4D69" stroke="#3B4D69" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bid">
+            <div class="container">
+                <div class="bid__row row">
+                    <h1 class="title anim">Готовы сделать первый шаг к жизни без боли?</h1>
+                    <h3 class="bid__subtitle anim">Оставьте заявку и получите бесплатную 15‑минутную консультацию с экспертом.</h3>
+                    <form action="#" method="post" class="bid__form">
+                        <div class="bid__form-row">
+                            <div class="bid__form-item anim">
+                                <p class="text bid__form-name">Имя</p>
+                                <input type="text" placeholder="Ваше имя" required="">
+                            </div>
+                            <div class="bid__form-item anim">
+                                <p class="text bid__form-name">Телефон</p>
+                                <input type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" required="">
+                            </div>
+                            <div class="bid__form-item anim">
+                                <p class="text bid__form-name">Метод связи</p>
+                                <div class="bid__form-item-block-container">
+                                    <div class="bid__form-item-block">
+                                        <p class="bid__form-item-text bid__form-item-text-light">Выберите метод связи</p>
+                                    </div>
+                                    <div class="bid__form-item-select">
+                                        <p data-value="telegram" class="bid__form-item-text">Написать в Telegram</p>
+                                        <div class="bid__form-item-select-line"></div>
+                                        <p data-value="whatsapp" href="#" class="bid__form-item-text">Написать в WhatsApp</p>
+                                        <div class="bid__form-item-select-line"></div>
+                                        <p data-value="phone" href="tel:+79999999999" class="bid__form-item-text">Телефонный звонок</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid__checkbox-group anim">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe" required="">
+                            <label for="subscribe" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Я согласен(на) с <a href="#">политикой конфиденциальности</a></span>
+                            </label>
+                        </div>
+                        <div class="bid__form-button-group anim">
+                            <button data-popup="bid" type="submit" class="bid__form-button">Получить бесплатную консультацию</button>
+                            <a class="bid__form-button" href="#">Записаться через Telegram бот</a>
+                        </div>
+                        <p class="bid__form-end anim">Мы против спама. Ваши данные конфиденциальны.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <div class="map__row row">
+                    <h1 class="title anim">Мы на карте</h1>
+                    <div class="map__subtitle anim">
+                        <img src="assets/image/map-icon.png" alt="">
+                        <h3>г. Москва, Автозаводская ул., 23А, “ЦСКА Арена”</h3>
+                    </div>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A55e98288305d9ad0d6daab716133a6a9cb85c3141751370b13a855231fb9aead&amp;source=constructor"></iframe>
+                    <button data-popup="bid" class="anim program__button-tg">
+                        <span>Записаться на вводное занятие</span>
+                        <img src="assets/image/program-arrow.png" alt="">
+                    </button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <div class="popup popup__programJS">
+        <div class="popup__program">
+            <button class="popup__close">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07178 1.04936L17.5718 17.9028" stroke="white" stroke-width="3" />
+                    <path d="M17.5718 1.04936L1.07178 17.9028" stroke="white" stroke-width="3" />
+                </svg>
+            </button>
+            <h3 class="popup__title">Подобрать программу</h3>
+            <form action="#" method="post">
+                <div class="popup__row">
+                    <div class="bid__form-item">
+                        <p class="popup__text popup__name bid__form-name">Имя</p>
+                        <input type="text" placeholder="Ваше имя" required="">
+                    </div>
+                    <div class="bid__form-item">
+                        <p class="popup__text popup__name bid__form-name">Телефон</p>
+                        <input type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" required="">
+                    </div>
+                </div>
+                <div class="popup__row">
+                    <div class="bid__form-item">
+                        <p class="text bid__form-name popup__name">Ваш пол</p>
+                        <div class="bid__form-item-block-container">
+                            <div class="bid__form-item-block">
+                                <p class="bid__form-item-text popup__text bid__form-item-text-light">Выберите пол</p>
+                            </div>
+                            <div class="bid__form-item-select">
+                                <p data-value="man" class="bid__form-item-text popup__name popup__text">Муж</p>
+                                <div class="bid__form-item-select-line"></div>
+                                <p data-value="woman" href="#" class="bid__form-item-text popup__name popup__text">Жен</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bid__form-item">
+                        <p class="popup__text popup__name bid__form-name">Ваш возраст</p>
+                        <input type="text" placeholder="Укажите ваш возраст">
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <p class="popup__name">Какие симптомы вас беспокоят?</p>
+                    <div class="popup__wrapper">
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe1" >
+                            <label for="subscribe1" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Боль в спине и шее</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe2" >
+                            <label for="subscribe2" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Боль в пояснице</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe3" >
+                            <label for="subscribe3" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Ограничение подвижности</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe4" >
+                            <label for="subscribe4" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Быстрая утомляемость</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe5" >
+                            <label for="subscribe5" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Нарушения сна</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe6" >
+                            <label for="subscribe6" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Напряжение в мышцах</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe7" >
+                            <label for="subscribe7" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Скованность по утрам</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe8" >
+                            <label for="subscribe8" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Травмы</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe9" >
+                            <label for="subscribe9" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Нарушения осанки</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe10" >
+                            <label for="subscribe10" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Ушибы</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item bid__form-item">
+                    <p class="popup__name">Есть ли у Вас установленный медицинский диагноз?</p>
+                    <input type="text" placeholder="Напишите, если есть">
+                </div>
+                <div class="popup__item">
+                    <p class="popup__name">Какие методы Вы уже использовали?</p>
+                    <div class="popup__wrapper">
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe12" >
+                            <label for="subscribe12" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Мази</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe13" >
+                            <label for="subscribe13" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Лечебная физкультура</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe14" >
+                            <label for="subscribe14" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Таблетки</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe15" >
+                            <label for="subscribe15" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Остеопатия</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe16" >
+                            <label for="subscribe16" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Массаж</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe17" >
+                            <label for="subscribe17" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Мануальная терапия</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe18" >
+                            <label for="subscribe18" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Физиотерапия</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe19" >
+                            <label for="subscribe19" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Ношение корсета</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe20" >
+                            <label for="subscribe20" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Бассейн</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe21" >
+                            <label for="subscribe21" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Спортивные секции</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe22" >
+                            <label for="subscribe22" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Хирургическая операция</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe23" >
+                            <label for="subscribe23" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Ещё ничего пробовали</span>
+                            </label>
+                        </div>
+                        <div class="bid__form-item">
+                            <div class="bid__checkbox-group">
+                                <input class="bid__checkbox-input" type="checkbox" id="subscribe24" >
+                                <label for="subscribe24" class="bid__checkbox-label">
+                                    <span class="bid__custom-box" aria-hidden="true">
+                                        <img src="assets/image/form__checkbox-blue.png" alt="">
+                                    </span>
+                                    <span class="bid__checkbox-text">Другое:</span>
+                                </label>
+                            </div>
+                            <input type="text" placeholder="Напишите, что Вы использовали">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item bid__form-item">
+                    <p class="popup__name">Были результаты от их использования?</p>
+                    <div class="bid__form-item-block-container">
+                        <div class="bid__form-item-block">
+                            <p class="bid__form-item-text popup__text bid__form-item-text-light">Выберите вариант ответа</p>
+                        </div>
+                        <div class="bid__form-item-select">
+                            <p data-value="var1" class="bid__form-item-text popup__name popup__text">Да, были, пока занимались/посещали</p>
+                            <p data-value="var2" href="#" class="bid__form-item-text popup__name popup__text">Да, были, но все вернулось назад</p>
+                            <p data-value="var3" class="bid__form-item-text popup__name popup__text">Результаты есть, но слабые</p>
+                            <p data-value="var4" href="#" class="bid__form-item-text popup__name popup__text">Нет, результатов не заметили</p>
+                            <p data-value="var5" class="bid__form-item-text popup__name popup__text">Нет, стало только хуже</p>
+                            <p data-value="var6" href="#" class="bid__form-item-text popup__name popup__text">Другое (написать)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item popup__item-row">
+                    <p class="popup__name">Вы занимаетесь или занимались ранее профессиональным спортом?</p>
+                    <div class="bid__form-item">
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe25" >
+                            <label for="subscribe25" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Да</span>
+                            </label>
+                        </div>
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe26" >
+                            <label for="subscribe26" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Нет</span>
+                            </label>
+                        </div>
+                        <input type="text" placeholder="Если да, напишите каким">
+                    </div>
+                </div>
+                <div class="popup__item bid__form-item">
+                    <p class="popup__name">Спасибо за информацию! Как  Вам удобнее получить ответ?</p>
+                    <div class="bid__form-item-block-container">
+                        <div class="bid__form-item-block">
+                            <p class="bid__form-item-text popup__text bid__form-item-text-light">Выберите вариант ответа</p>
+                        </div>
+                        <div class="bid__form-item-select">
+                            <p data-value="telegram" class="bid__form-item-text popup__name popup__text">Написать в Telegram</p>
+                            <p data-value="whatsapp" href="#" class="bid__form-item-text popup__name popup__text">Написать в WhatsApp</p>
+                            <p data-value="phone" class="bid__form-item-text popup__name popup__text">Телефонный звонок</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item popup__item-row">
+                    <div class="bid__form-item">
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe27" required="">
+                            <label for="subscribe27" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Я согласен(на) с <a href="#">политикой конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="popup__button">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup__bidJS">
+        <div class="popup__bid">
+            <button class="popup__close">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07178 1.04936L17.5718 17.9028" stroke="white" stroke-width="3" />
+                    <path d="M17.5718 1.04936L1.07178 17.9028" stroke="white" stroke-width="3" />
+                </svg>
+            </button>
+            <h3 class="popup__title">Оставить заявку</h3>
+            <form action="#" method="post">
+                <div class="bid__form-item">
+                        <p class="popup__text popup__name bid__form-name">Имя</p>
+                        <input type="text" placeholder="Ваше имя" required="">
+                </div>
+                <div class="bid__form-item">
+                    <p class="popup__text popup__name bid__form-name">Телефон</p>
+                    <input type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" required="">
+                </div>
+                <div class="popup__item bid__form-item">
+                    <p class="popup__name">Программа</p>
+                    <div class="bid__form-item-block-container">
+                        <div class="bid__form-item-block">
+                            <p class="bid__form-item-text popup__text bid__form-item-text-light">Выберите программу</p>
+                        </div>
+                        <div class="bid__form-item-select">
+                            <p data-value="var1" class="bid__form-item-text popup__name popup__text">Программа 1</p>
+                            <p data-value="var2" href="#" class="bid__form-item-text popup__name popup__text">Программа 2</p>
+                            <p data-value="var3" class="bid__form-item-text popup__name popup__text">Программа 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item popup__item-row">
+                    <div class="bid__form-item">
+                        <div class="bid__checkbox-group">
+                            <input class="bid__checkbox-input" type="checkbox" id="subscribe28" required="">
+                            <label for="subscribe28" class="bid__checkbox-label">
+                                <span class="bid__custom-box" aria-hidden="true">
+                                    <img src="assets/image/form__checkbox-blue.png" alt="">
+                                </span>
+                                <span class="bid__checkbox-text">Я согласен(на) с <a href="#">политикой конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="popup__button">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup__readyJS">
+        <button class="popup__close">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.06055 1.06055L15.0605 15.0605" stroke="#1E2E47" stroke-width="3" />
+                <path d="M15.0605 1.06055L1.06055 15.0605" stroke="#1E2E47" stroke-width="3" />
+            </svg>
+        </button>
+        <p class="popup__ready">Спасибо, ваша заявка отправлена!</p>
+    </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row row">
+                <div class="footer__left anim">
+                    <a href="#" class="header__logo">Лого</a>
+                    <p class="footer__text">
+                        Как исправить осанку, убрать сколиоз, головные боли, онемение и дискомфорт в позвоночнике.
+                        <br> <a href="#">Telegram</a>
+                    </p>
+                </div>
+                <div class="footer__nav anim">
+                    <h3 class="footer__nav-name">Контакты</h3>
+                    <ul class="footer__list">
+                        <li><a href="tel:+79999999999" class="footer__text">Тел.: +7 (XXX) XXX‑XX‑XX</a></li>
+                        <li><a href="mailto:info@example.com" class="footer__text">Email: info@example.com</a></li>
+                        <li><p class="footer__text">Адрес студии: по запросу</p></li>
+                    </ul>
+                </div>
+                <div class="footer__nav anim">
+                    <h3 class="footer__nav-name">Документы</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__text">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
