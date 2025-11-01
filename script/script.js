@@ -324,14 +324,23 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const header = document.querySelector('header');
-    const headerHeight = header ? header.offsetHeight : 0; 
+    const headerHeight = 170;
 
     for (const key in menuButtons) {
         menuButtons[key]?.addEventListener('click', () => {
             if (sections[key]) {
+                const currentScrollY = window.scrollY;
                 const sectionTop = sections[key].getBoundingClientRect().top + window.pageYOffset;
                 
-                const offsetPosition = sectionTop - headerHeight;
+                const isScrollingDown = sectionTop > currentScrollY;
+                
+                let offsetPosition;
+                
+                if (window.innerWidth < 800) {
+                    offsetPosition = isScrollingDown ? sectionTop : sectionTop - headerHeight;
+                } else {
+                    offsetPosition = sectionTop - headerHeight;
+                }
 
                 window.scrollTo({
                     top: offsetPosition,
@@ -340,6 +349,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+
+
 
 
     let lastScrollY = window.scrollY;
