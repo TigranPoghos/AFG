@@ -277,7 +277,7 @@ body.hidden {
   background: rgba(0, 0, 0, 0.9);
 }
 .info__row {
-  padding: 242px 0 150px 0;
+  padding: 242px 0 100px 0;
 }
 .info__title {
   font-weight: 700;
@@ -356,6 +356,7 @@ body.hidden {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  margin-top: 40px;
   margin-bottom: 41px;
 }
 .problem__top-plus {
@@ -1622,7 +1623,7 @@ body.hidden {
   }
   .info__row {
     padding-top: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .history {
     margin-bottom: 50px;
@@ -1723,6 +1724,9 @@ body.hidden {
   }
   .problem__second .problem__top-item-title {
     font-weight: 700;
+  }
+  .problem__top {
+    margin-top: 20px;
   }
   .problem__top-item-title {
     font-size: 17px;
