@@ -306,6 +306,37 @@ allVideoContainers.forEach(function(videoContainer) {
     });
 
 
+    const popupQuestion = document.querySelector('.popup__questionJS');
+    const openButtonsQuestion = document.querySelectorAll('[data-popup="question"]');
+    const closeButtonQuestion = popupQuestion?.querySelector('.popup__close');
+
+    openButtonsQuestion.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupQuestion?.classList.add('active');
+            body.classList.add('hidden')
+            opacite.classList.add('active')
+        });
+    });
+
+    closeButtonQuestion?.addEventListener('click', () => {
+        popupQuestion?.classList.remove('active');
+        body.classList.remove('hidden')
+        opacite.classList.remove('active')
+    });
+
+    document.addEventListener('click', (e) => {
+    const isPopupOpen = popupQuestion.classList.contains('active');
+    const isClickOutside = !popupQuestion.contains(e.target) && !e.target.closest('[data-popup="question"]');
+    
+        if (isPopupOpen && isClickOutside) {
+            popupQuestion?.classList.remove('active');
+            body.classList.remove('hidden');
+            opacite.classList.remove('active');
+        }
+    });
+
+
 
 
 
@@ -342,7 +373,7 @@ allVideoContainers.forEach(function(videoContainer) {
     };
 
     const sections = {
-        method: document.querySelector('.method__second'),
+        method: document.querySelector('.program'),
         history: document.querySelector('.history'),
         faq: document.querySelector('.faq'),
         rate: document.querySelector('.rate'),
@@ -433,6 +464,7 @@ allVideoContainers.forEach(function(videoContainer) {
 
             popupBid?.classList.remove('active');
             popupProgram?.classList?.remove('active');
+            popupQuestion?.classList?.remove('active');
             opacite?.classList?.add('active');
             body?.classList?.add('hidden');
 
@@ -466,6 +498,28 @@ allVideoContainers.forEach(function(videoContainer) {
             }
         });
     });
+
+
+
+
+    const container = document.querySelector('.history__block');
+    const items = container.querySelectorAll('.history__item, .history__line');
+    const showMoreBtn = container.querySelector('.rate__popup');
+
+    const isMobile = window.innerWidth <= 800;
+
+    if (isMobile && items.length > 7) {
+        items.forEach((item, index) => {
+            if (index >= 7) {
+                item.style.display = 'none';
+            }
+        });
+
+        showMoreBtn.addEventListener('click', () => {
+            items.forEach(item => (item.style.display = ''));
+            showMoreBtn.style.display = 'none';
+        });
+    }
 
 
 

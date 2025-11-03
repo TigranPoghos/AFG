@@ -323,9 +323,13 @@ body.hidden {
   margin-top: 33px;
   display: flex;
 }
+.info__content {
+  display: flex;
+  flex-direction: column;
+}
 
 .problem {
-  margin-bottom: 138px;
+  margin-bottom: 100px;
 }
 .problem__row {
   flex-direction: column;
@@ -357,7 +361,6 @@ body.hidden {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 40px;
-  margin-bottom: 41px;
 }
 .problem__top-plus {
   display: flex;
@@ -1133,6 +1136,9 @@ body.hidden {
 .map {
   margin-bottom: 50px;
 }
+.map .title {
+  margin-bottom: 40px;
+}
 .map .program__button-tg {
   width: 100%;
   margin-top: 20px;
@@ -1149,7 +1155,7 @@ body.hidden {
 }
 .map__subtitle {
   display: flex;
-  margin: 20px 0 30px 0;
+  margin-bottom: 30px;
   gap: 7px;
   align-items: center;
 }
@@ -1389,6 +1395,18 @@ body.hidden {
 .popup__bid .bid__form-item {
   max-width: 100%;
 }
+.popup__question {
+  background: #3b4d69;
+  border-radius: 40px;
+  padding: 30px;
+  max-width: 955px;
+  position: relative;
+  border: 0.3px solid #fff;
+  width: 100%;
+}
+.popup__question .bid__form-item {
+  max-width: 100%;
+}
 .popup__ready {
   background: #fff;
   font-weight: 500;
@@ -1528,6 +1546,10 @@ body.hidden {
   .info__subtitle {
     margin-bottom: 0;
   }
+  .info__content {
+    text-align: center;
+    align-items: center;
+  }
   .problem__bottom {
     border-radius: 40px;
     padding: 16px;
@@ -1646,10 +1668,16 @@ body.hidden {
   .history__text {
     font-size: 14px;
   }
+  .history__block {
+    justify-content: center;
+  }
   .history__item {
     gap: 12px;
     align-items: center;
     width: 100%;
+  }
+  .history__item-hidden {
+    display: none;
   }
   .history__item-title {
     font-size: 16px;
@@ -1936,7 +1964,7 @@ body.hidden {
     border-radius: 0 0 20px 20px;
   }
   .popup .bid__form-item-block {
-    padding: 10px 15px;
+    padding: 10px 35px 10px 15px;
   }
   .popup__wrapper {
     border-radius: 20px;
@@ -2002,9 +2030,11 @@ body.hidden {
   .map__row {
     align-items: center;
   }
+  .map .title {
+    margin-bottom: 20px;
+  }
   .map__subtitle {
     gap: 5px;
-    margin-top: 10px;
     margin-bottom: 20px;
   }
   .map__subtitle img {
