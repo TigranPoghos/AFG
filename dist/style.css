@@ -800,7 +800,7 @@ body.hidden {
   margin-bottom: 50px;
 }
 .faq__item {
-  padding: 30px 0;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #1e2e47;
@@ -819,6 +819,7 @@ body.hidden {
   padding-top: 0;
 }
 .faq__question {
+  padding: 30px 0;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -828,7 +829,7 @@ body.hidden {
   color: #3b4d69;
 }
 .faq__answer {
-  padding-top: 30px;
+  padding-bottom: 30px;
   margin-left: 30px;
   font-weight: 300;
   font-size: 24px;
