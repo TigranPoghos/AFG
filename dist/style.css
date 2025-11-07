@@ -1843,10 +1843,10 @@ body.hidden {
   }
   .faq__answer {
     font-size: 14px;
-    padding-top: 15px;
+    padding-bottom: 15px;
     margin-left: 17px;
   }
-  .faq__item {
+  .faq__question {
     padding: 15px 0;
   }
   .doc {
